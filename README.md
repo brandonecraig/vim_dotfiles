@@ -47,3 +47,6 @@ parse_git_branch() {
 }
 export PS1="bcraig \[\e[32m\]\w \[\e[91m\]\$(parse_git_branch)\[\e[00m\]$ "
 ```
+
+# Git Alias
+`git config -global alias.co checkout`
