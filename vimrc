@@ -59,7 +59,7 @@ set updatetime=300
 set wildignore+=*.pyc,*.o,*.class
 set wrap
 
-colorscheme jellybeans
+colorscheme slate
 
 autocmd BufNewFile,BufRead *.md,*.markdown setlocal textwidth=80 spell
 autocmd BufNewFile,BufRead *.txt setlocal textwidth=80 spell
