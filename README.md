@@ -6,6 +6,9 @@ Symlink `tmux.conf` to `~/.tmux.conf`
 
 Open vim and run `:PlugInstall`.
 
+# Change shell bash
+`chsh -s /bin/bash`
+
 # Install Homebrew
 
 `/bin/bash -c "$(curl -fsSL
@@ -36,3 +39,11 @@ bash`
 
 # Install rvm
 `\curl -sSL https://get.rvm.io | bash -s stable --ruby`
+
+# Improve Command Prompt
+```
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+export PS1="bcraig \[\e[32m\]\w \[\e[91m\]\$(parse_git_branch)\[\e[00m\]$ "
+```
